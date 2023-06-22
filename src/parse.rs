@@ -281,7 +281,11 @@ fn op(input: &str) -> (Op, &str) {
             (Op::Less, &input[1..])
         }
     } else if bytes.first() == Some(&b'~') {
-        (Op::Tilde, &input[1..])
+        if bytes.get(1) == Some(&b'>') {
+            (Op::Tilde, &input[2..])
+        } else {
+            (Op::Tilde, &input[1..])
+        }
     } else if bytes.first() == Some(&b'^') {
         (Op::Caret, &input[1..])
     } else {
