@@ -155,7 +155,7 @@ impl Error {
 }
 
 impl Op {
-    const DEFAULT: Self = Op::Caret;
+    const DEFAULT: Self = Op::Exact;
 }
 
 fn numeric_identifier(input: &str, pos: Position) -> Result<(u64, &str), Error> {
