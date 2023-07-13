@@ -68,6 +68,13 @@ Dependencies]* chapter of the Cargo reference.
 
 <br>
 
+## About this fork
+This was forked from the main `semver` crate to support `~>` pessimistic versioning syntax found in Terraform version constraints.
+
+This is unlikely to be merged into the main crate as `semver` is only concerned about Cargo's interpretation of Semantic Versioning.
+
+<br>
+
 #### License
 
 <sup>
