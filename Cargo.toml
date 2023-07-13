@@ -1,5 +1,5 @@
 [package]
-name = "semver"
+name = "tf-semver"
 version = "1.0.17"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 categories = ["data-structures", "no-std"]

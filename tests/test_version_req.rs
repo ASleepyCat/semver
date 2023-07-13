@@ -15,7 +15,7 @@ use std::hash::{Hash, Hasher};
 #[cfg(test_node_semver)]
 use node::{req, VersionReq};
 #[cfg(not(test_node_semver))]
-use semver::VersionReq;
+use tf_semver::VersionReq;
 
 #[cfg_attr(not(no_track_caller), track_caller)]
 fn assert_match_all(req: &VersionReq, versions: &[&str]) {

@@ -1,7 +1,7 @@
 #![no_main]
 
 use libfuzzer_sys::fuzz_target;
-use semver::Version;
+use tf_semver::Version;
 use std::str;
 
 fuzz_target!(|bytes: &[u8]| {

@@ -1,6 +1,6 @@
 #![cfg(test_node_semver)]
 
-use semver::Version;
+use tf_semver::Version;
 use std::fmt::{self, Display};
 use std::process::Command;
 

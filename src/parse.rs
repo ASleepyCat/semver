@@ -9,7 +9,7 @@ use core::str::FromStr;
 /// # Example
 ///
 /// ```
-/// use semver::Version;
+/// use tf_semver::Version;
 ///
 /// fn main() {
 ///     let err = Version::parse("1.q.r").unwrap_err();

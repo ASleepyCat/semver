@@ -17,7 +17,7 @@
 //! # Example
 //!
 //! ```
-//! use semver::{BuildMetadata, Prerelease, Version, VersionReq};
+//! use tf_semver::{BuildMetadata, Prerelease, Version, VersionReq};
 //!
 //! fn main() {
 //!     let req = VersionReq::parse(">=1.2.3, <1.8.0").unwrap();
@@ -383,7 +383,7 @@ impl Version {
     /// Equivalent to:
     ///
     /// ```
-    /// # use semver::{BuildMetadata, Prerelease, Version};
+    /// # use tf_semver::{BuildMetadata, Prerelease, Version};
     /// #
     /// # const fn new(major: u64, minor: u64, patch: u64) -> Version {
     /// Version {

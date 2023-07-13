@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use semver::{BuildMetadata, Error, Prerelease, Version, VersionReq};
+use tf_semver::{BuildMetadata, Error, Prerelease, Version, VersionReq};
 use std::fmt::Display;
 
 #[cfg_attr(not(no_track_caller), track_caller)]
