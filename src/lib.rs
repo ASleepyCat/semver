@@ -203,7 +203,7 @@ pub struct Comparator {
     pub pre: Prerelease,
 }
 
-/// SemVer comparison operator: `=`, `>`, `>=`, `<`, `<=`, `~`, `^`, `*`.
+/// SemVer comparison operator: `=`, `>`, `>=`, `<`, `<=`, `~`, `~>`, `^`, `*`.
 ///
 /// # Op::Exact
 /// - &ensp;**`=I.J.K`**&emsp;&mdash;&emsp;exactly the version I.J.K
@@ -232,9 +232,9 @@ pub struct Comparator {
 ///
 /// # Op::Tilde&emsp;("patch" updates)
 /// *Tilde requirements allow the **patch** part of the semver version (the third number) to increase.*
-/// - &ensp;**`~I.J.K`**&emsp;&mdash;&emsp;equivalent to `>=I.J.K, <I.(J+1).0`
-/// - &ensp;**`~I.J`**&emsp;&mdash;&emsp;equivalent to `=I.J`
-/// - &ensp;**`~I`**&emsp;&mdash;&emsp;equivalent to `=I`
+/// - &ensp;**`~I.J.K || ~>I.J.K`**&emsp;&mdash;&emsp;equivalent to `>=I.J.K, <I.(J+1).0`
+/// - &ensp;**`~I.J || ~>I.J`**&emsp;&mdash;&emsp;equivalent to `=I.J`
+/// - &ensp;**`~I || ~>I`**&emsp;&mdash;&emsp;equivalent to `=I`
 ///
 /// # Op::Caret&emsp;("compatible" updates)
 /// *Caret requirements allow parts that are **right of the first nonzero** part of the semver version to increase.*

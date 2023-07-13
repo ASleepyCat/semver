@@ -69,7 +69,7 @@ Dependencies]* chapter of the Cargo reference.
 <br>
 
 ## About this fork
-This was forked from the main `semver` crate to support `~>` pessimistic versioning syntax found in Terraform version constraints.
+This was forked from the main `semver` crate to support `~>` pessimistic versioning syntax found in Terraform version constraints. It also changes the default `Op` from `Caret` to `Exact`.
 
 This is unlikely to be merged into the main crate as `semver` is only concerned about Cargo's interpretation of Semantic Versioning.
 
